@@ -6,7 +6,7 @@
 /*   By: mdouglas <mdouglas@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 10:16:26 by mdouglas          #+#    #+#             */
-/*   Updated: 2022/11/30 10:34:34 by mdouglas         ###   ########.fr       */
+/*   Updated: 2022/12/03 11:08:57 by mdouglas         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void    exec(char *argv, char **envp)
     free_tab(cmd);
     if (run == 0)
     {
-        perror("Error nos comandos passados");
-        exit(EXIT_FAILURE);
+        perror("Command not Found");
+        exit(127);
     }
 }
